@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0F53B1FF283A848200EC6441 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 0F53B1FE283A848200EC6441 /* SnapKit */; };
+		0F53B201283A8C1B00EC6441 /* MenuBarScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F53B200283A8C1B00EC6441 /* MenuBarScrollView.swift */; };
 		0F8F6C1A283A81B000564A65 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F8F6C19283A81B000564A65 /* AppDelegate.swift */; };
 		0F8F6C1C283A81B000564A65 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F8F6C1B283A81B000564A65 /* SceneDelegate.swift */; };
 		0F8F6C1E283A81B000564A65 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F8F6C1D283A81B000564A65 /* ViewController.swift */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0F53B200283A8C1B00EC6441 /* MenuBarScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuBarScrollView.swift; sourceTree = "<group>"; };
 		0F8F6C16283A81B000564A65 /* MenuBarWithScrollView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MenuBarWithScrollView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0F8F6C19283A81B000564A65 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0F8F6C1B283A81B000564A65 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -60,6 +62,7 @@
 			children = (
 				0F8F6C19283A81B000564A65 /* AppDelegate.swift */,
 				0F8F6C1B283A81B000564A65 /* SceneDelegate.swift */,
+				0F53B200283A8C1B00EC6441 /* MenuBarScrollView.swift */,
 				0F8F6C1D283A81B000564A65 /* ViewController.swift */,
 				0F8F6C1F283A81B000564A65 /* Main.storyboard */,
 				0F8F6C22283A81B100564A65 /* Assets.xcassets */,
@@ -148,6 +151,7 @@
 			files = (
 				0F8F6C1E283A81B000564A65 /* ViewController.swift in Sources */,
 				0F8F6C1A283A81B000564A65 /* AppDelegate.swift in Sources */,
+				0F53B201283A8C1B00EC6441 /* MenuBarScrollView.swift in Sources */,
 				0F8F6C1C283A81B000564A65 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
