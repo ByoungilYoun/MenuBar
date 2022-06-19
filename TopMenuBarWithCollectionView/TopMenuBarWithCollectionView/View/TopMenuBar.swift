@@ -88,6 +88,11 @@ class TopMenuBar : UIScrollView {
       $0.width.equalTo(sender.bounds.width)
     }
     
+//    if sender.tag >= 3 && sender.tag <= 5{
+//      print("하하 여길탄다")
+//      self.setContentOffset(CGPoint(x: self.bounds.width / 2, y: 0), animated: true)
+//    }
+    
     UIView.animate(withDuration: 0.4, delay: 0, usingSpringWithDamping: 0.8, initialSpringVelocity: 1, options: .curveEaseInOut, animations: {
       self.layoutIfNeeded()
     }, completion: nil)
