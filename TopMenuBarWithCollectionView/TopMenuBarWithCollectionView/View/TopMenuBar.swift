@@ -23,7 +23,7 @@ class TopMenuBar : UIScrollView {
     return view
   }()
   
-  var didTap : ((Int, String?) -> Void)?
+  var didTap : ((Int, String?, CGFloat) -> Void)?
   
   //MARK: - Init
   override init(frame: CGRect) {
@@ -81,17 +81,12 @@ class TopMenuBar : UIScrollView {
   //MARK: - @objc func
   @objc private func handleTap(_ sender : UIButton) {
     
-    didTap?(sender.tag, sender.titleLabel?.text)
+    didTap?(sender.tag, sender.titleLabel?.text, sender.frame.origin.x)
     
     underLineView.snp.updateConstraints {
       $0.leading.equalTo(sender.frame.origin.x)
       $0.width.equalTo(sender.bounds.width)
     }
-    
-//    if sender.tag >= 3 && sender.tag <= 5{
-//      print("하하 여길탄다")
-//      self.setContentOffset(CGPoint(x: self.bounds.width / 2, y: 0), animated: true)
-//    }
     
     UIView.animate(withDuration: 0.4, delay: 0, usingSpringWithDamping: 0.8, initialSpringVelocity: 1, options: .curveEaseInOut, animations: {
       self.layoutIfNeeded()
